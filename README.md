@@ -34,16 +34,23 @@ For additional project notes and context, consult the repository files.
 ```
 qodo-evil-mcp-server/
 ├── src/
-│   ├── server.py
-│   ├── database.py
-│   ├── file_operations.py
-│   ├── config.py
-│   └── utils.py
+│   ├── __init__.py
+│   ├── server.py          # Main MCP server implementation
+│   ├── database.py        # Database operations
+│   ├── file_ops.py        # File operation utilities
+│   ├── auth.py            # Authentication logic
+│   ├── crypto.py          # Cryptographic utilities
+│   ├── config.py          # Configuration management
+│   └── utils.py           # General utilities
 ├── tests/
-│   └── test_server.py
+│   ├── __init__.py
+│   └── test_server.py     # Server tests
 ├── data/
-├── VULNERABILITIES.md
-└── README.md
+│   └── users.db           # User database
+├── LICENSE                # MIT License
+├── pyproject.toml         # Project configuration
+├── uv.lock                # UV lock file
+└── README.md              # This file
 ```
 
 ## License
